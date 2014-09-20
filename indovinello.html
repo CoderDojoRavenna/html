@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script>
+	console.log("INIT");
+	function controllaRisposta() {
+		if (document.getElementById('risposta').value == 5) {
+			alert("BRAVO!");
+		} else {
+			alert("Riprova.");
+		}
+
+		return false;
+	}
+	</script>
+</head>
+<body>
+<h1>Hai incontrato un viandante, che ti fa un indovinello</h1>
+<form onsubmit="return controllaRisposta()">
+	<h3>Quanto fa 3 + 2?</h3>
+	<input id="risposta" />
+</form>
+</body>
+</html>
